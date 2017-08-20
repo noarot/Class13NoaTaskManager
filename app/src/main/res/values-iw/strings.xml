@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">מנהל המשימות של נעה</string>
+    <string name="RePassword">הכנס שוב סיסמה</string>
+    <string name="email">הכנס דוא\"ל</string>
+    <string name="name">הכנס שם</string>
+    <string name="password">הכנס סיסמה</string>
+    <string name="phone">הכנס טלפון</string>
+    <string name="save">שמור</string>
+    <string name="signin">כניסה</string>
+    <string name="signup">רישום</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="signout">יציאה</string>
+    <string name="title_activity_main">מסך ראשי</string>
+    <string name="iscompleted">משימה הושלמה</string>
+</resources>

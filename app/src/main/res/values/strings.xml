@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">NoaTaskManager</string>
+    <string name="email">Enter your email</string>
+    <string name="password">Enter Password</string>
+    <string name="RePassword">Re-Enter Pasword</string>
+    <string name="name">Enter Name</string>
+    <string name="phone">Enter Phone</string>
+    <string name="save">Save</string>
+    <string name="signup">Sign Up</string>
+    <string name="signin">Sign In</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signout">Sign Out</string>
+    <string name="iscompleted">Is Completed</string>
+    <string name="title_activity_group">GroupActivity</string>
+</resources>
