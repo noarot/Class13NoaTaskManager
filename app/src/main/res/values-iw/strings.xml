@@ -13,4 +13,5 @@
     <string name="signout">יציאה</string>
     <string name="title_activity_main">מסך ראשי</string>
     <string name="iscompleted">משימה הושלמה</string>
+    <string name="groupname">הכנס שם קבוצה</string>
 </resources>

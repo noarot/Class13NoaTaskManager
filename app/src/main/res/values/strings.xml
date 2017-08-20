@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">NoaTaskManager</string>
-    <string name="email">Enter your email</string>
+    <string name="email">Enter email</string>
     <string name="password">Enter Password</string>
     <string name="RePassword">Re-Enter Pasword</string>
     <string name="name">Enter Name</string>
@@ -17,4 +17,5 @@
     <string name="signout">Sign Out</string>
     <string name="iscompleted">Is Completed</string>
     <string name="title_activity_group">GroupActivity</string>
+    <string name="groupname">Enter Group Name</string>
 </resources>

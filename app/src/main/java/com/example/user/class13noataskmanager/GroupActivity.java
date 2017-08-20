@@ -11,16 +11,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 
-import android.widget.TextView;
-
-import com.example.user.class13noataskmanager.group_fragments.MembersFragment;
-import com.example.user.class13noataskmanager.group_fragments.TasksFragment;
+import com.example.user.class13noataskmanager.group_fragments.GroupMembersFragment;
+import com.example.user.class13noataskmanager.group_fragments.GroupTasksFragment;
 
 public class GroupActivity extends AppCompatActivity {
 
@@ -46,8 +42,8 @@ public class GroupActivity extends AppCompatActivity {
         setContentView(R.layout.activity_group);
 
 fragments = new Fragment[2];
-fragments[0] = new TasksFragment();
-fragments[1] = new MembersFragment();
+fragments[0] = new GroupTasksFragment();
+fragments[1] = new GroupMembersFragment();
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
