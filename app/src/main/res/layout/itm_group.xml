@@ -8,15 +8,22 @@
         android:layout_height="wrap_content" >
 
         <LinearLayout
-            android:orientation="vertical"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
 
             <TextView
                 android:text="TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/itmTvName" />
+                android:id="@+id/itmTvGroupName" />
+
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/itmTvGroupOwner"
+                android:layout_weight="1" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
 </LinearLayout>

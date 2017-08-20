@@ -1,5 +1,6 @@
 package com.example.user.class13noataskmanager;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TabLayout;
 import android.support.design.widget.FloatingActionButton;
@@ -70,33 +71,37 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MyTask myTask = new MyTask();
-                myTask.setCreatedAt(System.currentTimeMillis());
-                myTask.setText("todo "+System.currentTimeMillis());
-                myTask.setCompleted(false);
-                myTask.setAddress("haifa");
-                myTask.setgKey("group1");
-                myTask.setuKey(DBUtils.auth.getCurrentUser().getEmail().toString());
+                Intent intent = new Intent(getBaseContext(), AddGroupActivity.class);
+                startActivity(intent);
 
-                myTask.settKey(DBUtils.myTaskRef.push().getKey());//create new task to get the key
-                //use the new key to insert other data
-                DBUtils.myTaskRef.child(myTask.gettKey()).setValue(myTask).addOnCompleteListener(
-                        new OnCompleteListener<Void>() {
-                            @Override
-                            public void onComplete(@NonNull Task<Void> task) {
-                                if (task.isSuccessful())
-                                {
-                                    Toast.makeText(MainActivity.this, "task added successful", Toast.LENGTH_SHORT).show();
-                                }
-                                else
-                                {
-                                    Toast.makeText(MainActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
-                                }
-                            }
-                        });
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//                MyTask myTask = new MyTask();
+//                myTask.setCreatedAt(System.currentTimeMillis());
+//                myTask.setText("to do " + System.currentTimeMillis());
+//                myTask.setCompleted(false);
+//                myTask.setAddress("haifa");
+//                myTask.setgKey("group1");
+//                myTask.setuKey(DBUtils.auth.getCurrentUser().getEmail().toString());
+//
+//                myTask.settKey(DBUtils.myTaskRef.push().getKey());//create new task to get the key
+//                //use the new key to insert other data
+//                DBUtils.myTaskRef.child(myTask.gettKey()).setValue(myTask).addOnCompleteListener(
+//                        new OnCompleteListener<Void>() {
+//                            @Override
+//                            public void onComplete(@NonNull Task<Void> task) {
+//                                if (task.isSuccessful())
+//                                {
+//                                    Toast.makeText(MainActivity.this, "task added successful", Toast.LENGTH_SHORT).show();
+//                                }
+//                                else
+//                                {
+//                                    Toast.makeText(MainActivity.this, task.getException().toString(), Toast.LENGTH_SHORT).show();
+//                                }
+//                            }
+//                        });
                 // TODO: 16/08/2017 change functionality
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
             }
         });
 

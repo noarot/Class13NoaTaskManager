@@ -18,4 +18,7 @@
     <string name="iscompleted">Is Completed</string>
     <string name="title_activity_group">GroupActivity</string>
     <string name="groupname">Enter Group Name</string>
+    <string name="savetask">Save Task</string>
+    <string name="enterText">Enter Text</string>
+    <string name="enteraddress">Enter Address</string>
 </resources>
