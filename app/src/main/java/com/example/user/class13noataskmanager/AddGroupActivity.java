@@ -3,7 +3,7 @@ package com.example.user.class13noataskmanager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class AddGroupActivity extends AppCompatActivity {
+public class  AddGroupActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
